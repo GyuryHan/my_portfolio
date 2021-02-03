@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>한규리 | 프론트엔드 포트폴리오</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css" />
+    <style>
+      @media (min-width: 768px) and (max-width:991px) {
+        #menu{
+          height:210px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row content_top">
+        <div class="col-lg-12">
+            <h1 id="front_end">FRONT-END DEVELOPER</h1>
+            <hr>
+            <p>프론트엔드 개발자 한규리의 포트폴리오 사이트입니다</p>
+            <button class="btn btn-default btn-lg">+ 더보기</button>
+        </div>
+      </div>
+      <div class="content_main">
+        <nav class="navbar navbar-default">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-logo" href="#">
+                <img alt="tangerine" src="img/logo.jpg"><span>Gyury Han</span>          
+              </a>
+            </div>
+            <div class="collapse navbar-collapse navbar-scrollspy" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="#project">Project</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav><!-- / .navbar navbar-default -->
+        <div class="container">
+          <!-- portfolio -->
+          <div class="project" id="project">
+            <div class="row title">
+              <h4>PROJECT</h4>
+              <hr>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="card1">
+                  <div class="card-body">Content</div>
+                  <div class="card-footer">
+                    <h4>SOSO WEDDING</h4>
+                    <p>종합 웨딩 사이트</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card2">
+                  <div class="card-body">Content</div>
+                  <div class="card-footer">
+                    <h4>DUDA</h4>
+                    <p>치매예방 미니게임</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="card3">
+                  <div class="card-body">Content</div>
+                  <div class="card-footer">
+                    <h4>APPLE INTERECTION</h4>
+                    <p>애플 인터렉션 사이트</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card4">
+                  <div class="card-body">Content</div>
+                  <div class="card-footer">
+                    <h4>REACT SHOP</h4>
+                    <p>신발 쇼핑몰</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- about me -->
+          <div class="about_me" id="about">
+            <div class="row title">
+              <h4>ABOUT ME</h4>
+              <hr>
+              <p>한규리<br>1996.05.11</p>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="circle1"><img src="./img/logo.jpg"></div>
+                <h3>MOTTO</h3>
+                <p>ddddddddddd</p>
+              </div>
+              <div class="col-md-4">
+                <div class="circle1"><img src="./img/logo.jpg"></div>
+                <h3>PUBLISHER</h3>
+                <p>ddddddddddd</p>
+              </div>
+              <div class="col-md-4">
+                <div class="circle1"><img src="./img/logo.jpg"></div>
+                <h3>FRONTEND</h3>
+                <p>ddddddddddd</p>
+              </div>
+            </div>
+          </div>
+          <!-- contact -->
+          <div class="contact" id="contact">
+            <div class="row title">
+              <h4>CONTACT</h4>
+              <hr>
+              <div class="col-sm-12">
+                <i class="fas fa-envelope fa-9x"></i>
+                <p><a href="pos7271@daum.net">pos7271@daum.net</a></p>
+              </div>
+              <div class="col-sm-12">
+                <i class="fab fa-github fa-9x"></i>
+                <p><a href="https://github.com/GyuryHan">https://github.com/GyuryHan</a></p>
+              </div>
+              <div class="col-sm-12">
+                <i class="fas fa-phone-volume fa-9x"></i>
+                <p>010 6658 7271</p>
+              </div>
+            </div>
+          </div>
+        </div> <!-- / .container-->
+      </div> <!-- / .content_main-->
+      <footer>
+        <p>ⓒ 2020 한규리 all rights reserved.</p>
+      </footer>
+   </div> <!-- / .container-fluid-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/7ca638aa34.js" crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+  <script>
+    // document.location.reload(true);
+    $('body').scrollspy({ 
+      target: '.navbar-scrollspy',
+      offset:100 
+    })
+  </script>
+  </body>
+</html>

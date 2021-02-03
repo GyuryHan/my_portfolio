@@ -1,0 +1,154 @@
+body,html {
+  /* width: 100%; */
+  /* overflow-x: hidden; */
+  position: relative;
+}
+
+/* .navbar {
+  z-index: 10;
+} */
+
+.nav_fix {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+/* 상단 메인이미지 */
+.main {
+
+}
+
+#front_end {
+	font-weight: 700;
+	font-size: 3em;
+}
+
+.content_top {
+  background: url(https://images.unsplash.com/photo-1415369629372-26f2fe60c467);
+  background-size: cover;
+  background-position: center; 
+  width: 100%;
+  height: 100vh;
+  font-family: "Lato";
+  color: white;
+  margin: 0;
+	padding-top: 20%;
+	text-align: center;
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+               0px 8px 13px rgba(0,0,0,0.1),
+                0px 18px 23px rgba(0,0,0,0.1);
+  /* margin: 0 auto; */
+
+}
+
+hr {
+  color: white;
+  margin: 40px auto 40px auto;
+  background-color: #ffffff;
+  height: 1px;
+  width: 106px;
+  border: 0;
+}
+
+.btn-lg {
+  background: none;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 0;
+  font-size: 1em;
+  margin: 100px auto;
+}
+
+
+/* ㄴㄴ */
+.container-fluid {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-default {
+  background-color: #ffffff;
+}
+
+.navbar-logo>img {
+  display: inline;
+  height: 50px;
+}
+
+.navbar-brand span {
+}
+
+.title h4 {
+  font-size: 34px;
+  color: black;
+  text-align: center;
+  margin-top: 120px;
+  letter-spacing: 6px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.title hr {
+  color: black;
+  margin-top: 30px;
+  background-color: black;
+  height: 1px;
+  width: 106px;
+  border: 0;
+}
+
+.card1, .card2, .card3, .card4  {
+  border: 1px solid #c7c7c7;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card1 > .card-body {
+  background-color: #FBB9AB;
+  height: 180px;
+}
+
+.card2 > .card-body {
+  background-color: #BAD1E6;
+  height: 180px;
+}
+
+.card3 > .card-body {
+  background-color: #F7E9E4;
+  height: 180px;
+}
+
+.card4 > .card-body {
+  background-color: #E7EDF7;
+  height: 180px;
+}
+
+/* ABOUT ME */
+.about_me p {
+  color: #a4a4a4;
+  margin: 40px auto;
+  width: 300px;
+  line-height: 25px;
+  font-size: 14px;
+  font-weight: 300;
+  text-align: center;
+}
+
+/* CONTACT */
+.contact .col-sm-12 {
+  text-align: center;
+}
+
+/* footer */
+footer p {
+  width: 100%;
+  color: rgb(190, 190, 190);
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 0.8rem;
+  text-align: center;
+  display: inline-block;
+  padding: 30px 0px;
+  font-weight: 700;
+}
