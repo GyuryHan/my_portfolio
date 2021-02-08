@@ -14,6 +14,9 @@ body,html {
   z-index: 10;
 }
 
+.navbar-default {
+  width: 100vw;
+}
 /* 상단 메인이미지 */
 .main {
 
@@ -101,31 +104,46 @@ hr {
 
 .card1, .card2, .card3, .card4  {
   border: 1px solid #c7c7c7;
-  border-radius: 10px;
+  border-radius: 5px;
   overflow: hidden;
+  margin-bottom: 50px;
+}
+
+.card-body {
+  height: 280px;
+  border-bottom: 1px solid #c7c7c7;
 }
 
 .card1 > .card-body {
-  background-color: #FBB9AB;
-  height: 180px;
+  /* background-color: #FBB9AB; */
+  background-image: url(img/soso.png);
+  background-position: center;
+  background-size: cover;
 }
 
 .card2 > .card-body {
-  background-color: #BAD1E6;
-  height: 180px;
+  /* background-color: #BAD1E6; */
+  background-image: url(img/duda.png);
+  background-position: center;
+  background-size: cover;
 }
 
 .card3 > .card-body {
-  background-color: #F7E9E4;
-  height: 180px;
+  /* background-color: #F7E9E4; */
+  background-image: url(img/apple.png);
+  background-position: center;
+  background-size: cover;
 }
 
 .card4 > .card-body {
   background-color: #E7EDF7;
-  height: 180px;
 }
 
 /* ABOUT ME */
+.about_me h3 {
+  text-align: center;
+}
+
 .about_me p {
   color: #a4a4a4;
   margin: 40px auto;
@@ -151,4 +169,10 @@ footer p {
   display: inline-block;
   padding: 30px 0px;
   font-weight: 700;
+}
+
+@media (max-width: 767px) {
+  .card-body {
+    height: 180px;
+  }
 }
