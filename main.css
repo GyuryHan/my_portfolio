@@ -4,6 +4,9 @@ body,html {
   position: relative;
 }
 
+body {
+  font-family: 'NanumSquare', sans-serif;
+}
 /* .navbar {
   z-index: 10;
 } */
@@ -17,6 +20,13 @@ body,html {
 .navbar-default {
   width: 100vw;
 }
+
+.navbar span {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
 /* 상단 메인이미지 */
 .main {
 
@@ -140,8 +150,16 @@ hr {
 }
 
 /* ABOUT ME */
-.about_me h3 {
+.circle {
   text-align: center;
+}
+
+.about_me p {
+  text-align: center;
+}
+
+.about_me img {
+  width: 60%;
 }
 
 .about_me p {
@@ -151,12 +169,34 @@ hr {
   line-height: 25px;
   font-size: 14px;
   font-weight: 300;
-  text-align: center;
 }
 
 /* CONTACT */
 .contact .col-sm-12 {
   text-align: center;
+}
+
+.contact p {
+  margin-bottom: 30px;
+}
+
+.contact a {
+  color: black;
+  text-decoration: none;
+}
+
+.contact i {
+	transition: transform 300ms ease;
+  cursor: pointer;
+}
+
+#url_git {
+  margin-top: 15px;
+}
+
+#phone_num {
+  margin-top: 20px;
+  letter-spacing: 0.25rem;
 }
 
 /* footer */
