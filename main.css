@@ -1,15 +1,15 @@
 body,html {
-  /* width: 100%; */
-  /* overflow-x: hidden; */
   position: relative;
 }
 
 body {
   font-family: 'NanumSquare', sans-serif;
 }
-/* .navbar {
-  z-index: 10;
-} */
+
+.container a {
+  text-decoration: none;
+}
+
 .nav>li>a {
   margin: 0 25px;
 }
@@ -26,10 +26,9 @@ body {
 
 .navbar span {
   text-decoration: none;
-  color: black;
+  color: rgb(68, 66, 66);
   font-weight: 600;
   font-size: 18px;
-  /* padding: 20px 25px; */
 }
 
 .navbar a:hover, .navbar a:focus {
@@ -52,17 +51,13 @@ body {
 }
 
 /* 상단 메인이미지 */
-.main {
-
-}
-
 #front_end {
 	font-weight: 700;
 	font-size: 3em;
 }
 
 .content_top {
-  background: url(https://images.unsplash.com/photo-1415369629372-26f2fe60c467);
+  background: url(./img/main_top.jpg);
   background-size: cover;
   background-position: center; 
   width: 100%;
@@ -75,8 +70,6 @@ body {
   text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
                0px 8px 13px rgba(0,0,0,0.1),
                 0px 18px 23px rgba(0,0,0,0.1);
-  /* margin: 0 auto; */
-
 }
 
 hr {
@@ -97,8 +90,6 @@ hr {
   margin: 100px auto;
 }
 
-
-/* ㄴㄴ */
 .container-fluid {
   margin: 0;
   padding: 0;
@@ -113,12 +104,9 @@ hr {
   height: 50px;
 }
 
-.navbar-brand span {
-}
-
 .title h4 {
   font-size: 34px;
-  color: black;
+  color: rgb(68, 66, 66);
   text-align: center;
   margin-top: 120px;
   letter-spacing: 6px;
@@ -141,6 +129,9 @@ hr {
   border-radius: 5px;
   overflow: hidden;
   margin-bottom: 50px;
+  text-align: center;
+  color: black;
+  cursor: pointer;
 }
 
 .card-body {
@@ -149,22 +140,19 @@ hr {
 }
 
 .card1 > .card-body {
-  /* background-color: #FBB9AB; */
   background-image: url(img/soso.png);
   background-position: center;
   background-size: cover;
 }
 
 .card2 > .card-body {
-  /* background-color: #BAD1E6; */
   background-image: url(img/duda.png);
   background-position: center;
   background-size: cover;
 }
 
 .card3 > .card-body {
-  /* background-color: #F7E9E4; */
-  background-image: url(img/apple.png);
+  background-image: url(img/yupdduk.png);
   background-position: center;
   background-size: cover;
 }
@@ -172,6 +160,7 @@ hr {
 .card4 > .card-body {
   background-color: #E7EDF7;
 }
+
 
 /* ABOUT ME */
 .circle {
@@ -235,7 +224,97 @@ footer p {
   font-weight: 800;
 }
 
+/* .modal */
+.modal {  
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal_overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.modal_content {
+  background-color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  border-radius: 10px;
+  width: 90%;
+  height: 90%;
+  overflow-y: scroll;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.hidden {
+  display: none;
+}
+
+.modal_btn {
+  text-align: right;
+}
+
+.closeBtn {
+  background: #ffffff;
+  color: #a59588;
+  border: 0;
+  font-size: 25px;
+  font-weight: 900;
+}
+
+.modal_content h1 {
+  color: #8b7969;
+  font-size: 25px;
+  letter-spacing: 6px;
+}
+
+.modal_content p {
+  letter-spacing: 1px;
+  color: #a4a4a4;
+}
+
+.modal_body img{
+  width: 80%;
+  margin-top: 30px;
+}
+
+.modal_body hr {
+  border-bottom: 1px solid #a59588;
+  margin: 40px auto;
+  margin-bottom: 10px;
+  width: 80%;
+}
+
+.modal_url {
+  margin-top: 40px;
+}
+
+.modal_text p {
+  font-size: 16px;
+  color: #8b7969;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.modal_text img {
+  width: 40px;
+  margin-top: 0;
+  display: inline-block;
+}
+
 @media (max-width: 767px) {
+  .title h4 {
+    margin-top: 60px;
+  }
   .card-body {
     height: 180px;
   }
