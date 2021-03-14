@@ -1,9 +1,15 @@
+const plusBtn = document.querySelector('#plusBtn');
 let lis = document.querySelectorAll('li');
 let nav = document.querySelector('nav');
 const modal = document.querySelector('.modal');
 const openBtn = document.querySelector('.card1')
 const closeBtn = document.querySelector('.closeBtn');
 const overlay = modal.querySelector('.modal_overlay');
+
+plusBtn.addEventListener('click',function() {
+  document.querySelector('.project').scrollIntoView(true);
+});
+
 
 const openModal = () => {
   modal.classList.remove('hidden');
@@ -28,6 +34,7 @@ window.addEventListener('scroll', () => {
     nav.classList.remove('nav_fix');
   }
 });
+
 
 openBtn.addEventListener('click', openModal);
 closeBtn.addEventListener('click', closeModal);

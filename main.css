@@ -81,7 +81,7 @@ hr {
   border: 0;
 }
 
-.btn-lg {
+.btn-lg, .btn-lg:hover, .btn-lg:active, .btn-lg:focus {
   background: none;
   color: #ffffff;
   border: 1px solid #ffffff;
@@ -96,6 +96,10 @@ hr {
 }
 
 .navbar-default {
+  background-color: #ffffff;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
   background-color: #ffffff;
 }
 
@@ -132,6 +136,7 @@ hr {
   text-align: center;
   color: black;
   cursor: pointer;
+	outline: none;
 }
 
 .card-body {
